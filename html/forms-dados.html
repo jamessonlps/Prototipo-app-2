@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/forms-dados.css">
+        <title>Novo perfil</title>
+        <script src="../js/forms-dados.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="voltar" href="#">
+                <img src="../img/back.png" alt="voltar">
+            </a>
+            <h1>Novo perfil de músico</h1>
+        </header>
+
+        <main>
+            <div class="forms">
+                <input class="texto nome" placeholder="Digite seu nome" type="text" value="">
+                <input class="texto email" placeholder="Digite seu e-mail" type="text" value="">
+                <input class="texto endereco" placeholder="Endereço completo" type="text" value="">
+                <input class="texto telefone" placeholder="Telefone para contato" type="number" value="">
+            </div>
+
+            <p>
+                Os dados abaixo são necessários para que você possa ser
+                contratado(a) por outras pessoas.
+            </p>
+
+            <div class="forms">
+                <input class="texto cpf" placeholder="CPF" type="number" value="">
+                <input class="texto nascimento" placeholder="Data de nascimento" type="number" value="">
+            </div>
+
+            <p>Tipo de conta</p>
+
+            <div class="check">
+                <input name="conta" type="radio" id="conta-1" value="">
+                <label for="conta-1">Conta Corrente</label>
+            </div>
+            <div class="check">
+                <input name="conta" type="radio" id="conta-2" value="">
+                <label for="conta-1">Conta Poupança</label>
+            </div>
+
+            <select class="bancos" name="banco">
+                <option value="" selected disabled>Escolha o seu banco</option>
+                <option value="banco-1">Santander</option>
+                <option value="banco-2">Nubank</option>
+                <option value="banco-3">Banco Inter S.A.</option>
+                <option value="banco-4">Bradesco</option>
+                <option value="banco-5">Itaú</option>
+                <option value="banco-6">Banco do Brasil</option>
+                <option value="banco-7">HSBC</option>
+            </select>
+
+            <div class="forms">
+                <input class="texto agencia" placeholder="Agência (com dígito)" type="number" value="">
+                <input class="texto numeroConta" placeholder="Número da conta" type="number" value="">
+            </div>
+
+            <a class="botao botao-off">Confirmar</a>
+
+        </main>
+    </body>
+</html>

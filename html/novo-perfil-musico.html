@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/novo-perfil-musico.css">
+        <script src="../js/novo-perfil-musico.js"></script>
+        <title>Perfil de músico</title>
+    </head>
+    <body>
+        <header>
+            <a class="voltar" href="#">
+                <img src="../img/back.png" alt="voltar">
+            </a>
+            <h1>Novo perfil de músico</h1>
+        </header>
+
+        
+        <main>
+            <h2>
+                Agora, insire informações que detalhem mais o seu 
+                trabalho com a música em geral.
+            </h2>
+
+            <div class="img-perfil-container">
+                <img class="perfil" src="../img/user.png">
+                <label class="pseudo-botao" for="seleciona-foto">Adicionar foto</label>
+                <input id="seleciona-foto" type="file">
+            </div>
+
+            <div class="campo">
+                <label>Habilidades</label>
+                <select class="habilidades">
+                    <option class="opcao-habilidade" selected disabled>Selecione aqui suas habilidades</option>
+                    <option>Voz</option>
+                    <option>Violão</option>
+                    <option>Bateria</option>
+                    <option>Baixo</option>
+                    <option>Guitarra</option>
+                    <option>Saxofone</option>
+                    <option>Composição</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Estilos musicais</label>
+                <select class="estilos">
+                    <option class="opcao-estilo" selected disabled>Selecione aqui seus estilos musicais</option>
+                    <option>Rock Nacional</option>
+                    <option>Rock Internacional</option>
+                    <option>Sertanejo</option>
+                    <option>Axé</option>
+                    <option>Forró</option>
+                    <option>Blues</option>
+                    <option>Música Clássica</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <p>Detalhes adicionais:</p>
+                <input type="text" placeholder="Especifique mais aqui sobre o seu trabalho, faça com que os outros entendam melhor o seu trabalho.">
+            </div>
+
+            <div class="campo">
+                <p>
+                    Você também pode adicionar fotos para que os outros 
+                    músicos e contratantes vejam:
+                </p>
+                <label class="botao-2 pseudo-botao" for="seleciona-imagens">Adicionar fotos</label>
+                <input id="seleciona-imagens" type="file">
+            </div>
+
+            <div class="campo">
+                <p>
+                    Você também pode adicionar vídeos para que os outros 
+                    músicos e contratantes vejam:
+                </p>
+                <label class="botao-2 pseudo-botao" for="seleciona-videos">Adicionar vídeos</label>
+                <input id="seleciona-videos" type="file">
+            </div>
+
+            <a class="botao-on" href="#">Confirmar</a>
+        </main>
+    </body>
+</html>

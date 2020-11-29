@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/novo-anuncio.css">
+        <title>Novo anúncio</title>
+    </head>
+    <body>
+        <header>
+            <a class="voltar" href="#">
+                <img src="../img/back.png" alt="voltar">
+            </a>
+            <h1>Novo anúncio</h1>
+        </header>
+
+
+        <main>
+            <form>
+                <h2>Escolha uma cidade para prestar serviço</h2>
+                <select class="cidades">
+                    <option value="" selected disabled>Escolha aqui</option>
+                    <option value="">São José dos Campos - SP</option>
+                    <option value="">São Paulo - SP</option>
+                    <option value="">Campinas - SP</option>
+                    <option value="">Ribeirão Preto - SP</option>
+                </select>
+
+                <h2>Disponibilidade</h2>
+                <input class="texto dia" placeholder="Dia(s)" type="number" value="">
+                <input class="texto horaInicio" placeholder="Horário de início" type="number" value="">
+                <input class="texto horaFinal" placeholder="Horário de término" type="number" value="">
+                <input class="texto valor" placeholder="Valor por hora (R$)" type="number" value="">
+            </form>
+
+            <a class="botao" href="#">Criar anúncio</a>
+        </main>
+    </body>
+</html>

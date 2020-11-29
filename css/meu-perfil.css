@@ -1,0 +1,121 @@
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+a {
+    display: block;
+    padding: 0rem .6rem;
+    text-decoration: none;
+}
+
+img {
+    width: 2.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5rem;
+    background-color: #0E516E;
+    text-align: center;
+}
+
+h1 {
+    align-self: center;
+    color: white;
+    font-size: 1.7rem;
+    width: calc(100% - 5rem);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* div com foto, nome e cidade */
+.foto-perfil-container {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+/* alinha os parágrafos em coluna */
+.pseudo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* foto do perfil */
+.foto {
+    width: 7rem;
+}
+
+/* div da carteira virtual */
+.carteira {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+/* seções com as tags de habilidade e estilo */
+.habilidades, .estilos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 1.5rem 0;
+}
+
+/* tags de habilidades e estilos */
+.tag {
+    margin: .3rem;
+    padding: .2rem .7rem;
+    background-color: #B1BEF7;
+    border-radius: .3rem;
+}
+
+/* texto do parágrafo da descrição */
+.p-texto {
+    color: #8492A6;
+}
+
+/* margens gerais */
+.descricao, .fotos, .videos, .anuncios {
+    margin: 1.5rem 0 0 0;
+}
+
+/* botao para os dois casos */
+.botao {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: .6rem;
+    border-radius: .3rem;
+    background-color: #0E516E;
+    text-align: center;
+    max-width: 6rem;
+}
+
+.botao:active {
+    background-color: rgb(88, 90, 241);
+}
+
+.enviar {
+    align-self: center;
+}

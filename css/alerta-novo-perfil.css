@@ -1,0 +1,63 @@
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 4rem 0 5rem 0;
+    padding: 0 1rem;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.img {
+    width: 60%;
+    max-width: 20rem;
+}
+
+.botoes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.botao {
+    width: 5rem;
+    text-align: center;
+    border-radius: .8rem;
+}
+
+.criar-perfil {
+    background-color: #1E8A00;
+}
+
+.voltar {
+    background-color: #0E516E;
+}

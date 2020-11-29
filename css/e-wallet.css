@@ -1,0 +1,119 @@
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+a {
+    display: block;
+    padding: 0rem .6rem;
+    text-decoration: none;
+}
+
+img {
+    width: 2.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5rem;
+    background-color: #0E516E;
+    text-align: center;
+}
+
+h1 {
+    align-self: center;
+    color: white;
+    font-size: 1.7rem;
+    width: calc(100% - 5rem);
+}
+
+main {
+    margin: 1.2rem 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+p {
+    margin: .2rem;
+}
+
+/* posiciona no centro */
+img.wallet, a.resgatar, h2 {
+    align-self: center;
+}
+
+/* dimensiona figura da carteira */
+.wallet {
+    width: 7rem;
+}
+
+/* cards do histórico */
+.card-historico {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: .5rem;
+    background-color: #F8F8F8;
+    border-radius: .5rem;
+}
+
+.registro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p.enfase {
+    font-weight: bold;
+}
+
+p.grana {
+    color: #17972C;
+    font-weight: bold;
+}
+
+.botao {
+    align-self: center;
+    font-size: 1.1rem;
+    border-radius: .7rem;
+}
+
+.resgatar {
+    margin: .5rem 0 1.5rem 0;
+    color: white;
+    background-color: #0E516E;
+    padding: .7rem 1.1rem;
+}
+
+.secundario {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: black;
+    border: .15rem solid #0E516E;
+    padding: .3rem 1.1rem;
+}
+
+.cinza {
+    margin-top: .5rem;
+    text-align: justify;
+    color: gray;
+}
