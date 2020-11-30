@@ -22,127 +22,107 @@ header {
     background-color: #0E516E;
 }
 
+.botao_filtro{
+    position: relative;
+    right: -2rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.voltar {
+    display:flex;
+    position: fixed;  /* Ajustar para RELATIVE */
+    top: 1.5rem;
+    left: 1rem;
+}
+.voltar img{
+    height: 2rem;
+    width: 2rem;
+}
+
 main {
-    margin-top: .1rem;
     display: flex;
     flex-direction: column;
-    padding: .02rem;
-    /* background-color: aquamarine; */
-    height: 100%;
-    overflow: scroll;
-}
-
-
-/* Ajustos do Carrossel */
-.carrossel{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    height: 40%;
+    height: 100%;
     width: 100%;
-    background-color:goldenrod;
-    margin: .1rem .1rem 1rem;
-}
-/* Ajuste da Imagem do Anúncio no Carrossel */
-.carrossel img{
-    display:flex;
-    align-content: center;
-    height: 96%;
-    width: 96%;
+    overflow: scroll;
+    /* background-color: aquamarine; */
 }
 
-/* Título Seção */
-.titulo_secao{
-    font-family: fantasy;
-    color: chocolate;
-    font-size: small;
-    margin-left: .6rem;
-}
-
-/* ======== Ajuste do Storyline ======= */
-.storyline{
+/* ------------------------------ */
+/* Ajuste Lista de Músicos */
+ul{
     display:flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* height: 50rem; */
-    padding: .5rem 1rem 0 1rem;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 /* Ajuste do Post */
-.post{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* height: 10rem; Ajustar para que caiba a postagem inteira */
-    margin-bottom: 1rem;
-    background-color: rgb(151, 221, 238);
-    border-radius: .4rem;
-    padding: .4rem;
-    font-family: 'Arial Narrow', sans-serif;
-    font-size: 16px;
-    justify-content: space-between;
-    
-}
-.cabecalho_post{
+.musico{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-items: flex-start;
-    width: 100%;
-}
-.cabecalho_post img{
-    margin: .4rem .8rem .4rem .5rem;
-    height: 3rem;
-    width: 3rem;
+    justify-content: space-around;
+    /* background-color: rgb(151, 221, 238); */
+    font-size: 16px;
+    margin: .7rem 0 0 0;
+    border-bottom: 1px solid grey;
+
 }
 
-.info_autor{
-    display:flex;
+.musico img{
+    display: flex;
+    margin: 1rem .5rem .2rem .5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    /* border: 2px solid black; */
+}
+
+.info_musico{
+    display: flex;
     flex-direction: column;
+    width: 55%;
+    padding: .6rem 0 .6rem 0 ;
+    /* border: 1px solid red; */
 }
 .Nome{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
 }
 .info_gerais{
     font-family: cursive;
     font-size: small;
+    margin: .2rem 0 .5rem 0;
+    color: rgb(12, 72, 182);
 }
-.conteudo_post{
-    padding: .2rem;
-}
-.link{
-    color: darkblue;
-    font-style: oblique;
-}
-.video{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 60%;
-    height: 10rem;
-    margin:.2rem 0 0 3rem;
+.info_musico p{
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-.botoes_interacao{
+.interagir{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: .4rem;
-
+    /* justify-content: space-evenly; */
+    margin: 0 .5rem 0 .1rem;
+    /* border: 1px solid white; */
 }
 
-.botao_curtir{
-    height: 2rem;
-    width: 2rem;
-    margin: .1rem .5rem .1rem .1rem;
+.distancia{
+    font-family: Impact;
+    margin-bottom: .5rem;
 }
 
-.botao_comentar{
-    height: 2rem;
-    width: 2rem;
-    margin: .1rem .5rem .1rem 1rem;
-
+.botao_ver_perfil{
+    background-color: crimson;
+    color: whitesmoke;
+    padding: .2rem .5rem .2rem .5rem;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* ===================================== */
 .loading{
@@ -193,8 +173,8 @@ main {
 }
 
 /* ------------------------------------------- */
+
 h1 {
     color: white;
     font-size: 1.7rem;
 }
-
