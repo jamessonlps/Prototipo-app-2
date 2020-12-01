@@ -93,7 +93,7 @@ img.perfil {
     border-radius: .7rem;
 }
 
-.botao-2 {
+.btn-2 {
     width: fit-content;
 }
 
@@ -105,4 +105,32 @@ img.perfil {
     background-color: #1E8A00;
     border-radius: .7rem;
     margin-bottom: 1rem;
+}
+
+.botao-off {
+    align-self: center;
+    padding: .7rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #696969;
+    border-radius: .7rem;
+}
+
+.tagsHabil, .tagsEstilo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin: .2rem .3rem;
+    padding: .15rem .7rem;
+    background-color: #BED4FA;
+    border-radius: .3rem;
+}
+
+
+.habilidadesP, .estilosP {
+    font-size: 1rem;
+    color: #0E516E;
 }

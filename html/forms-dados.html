@@ -18,9 +18,12 @@
 
         <main>
             <div class="forms">
-                <input class="texto nome" placeholder="Digite seu nome" type="text" value="">
-                <input class="texto email" placeholder="Digite seu e-mail" type="text" value="">
-                <input class="texto endereco" placeholder="Endereço completo" type="text" value="">
+                <input class="texto nome" placeholder="Nome completo" type="text" value="">
+                <input class="texto email" placeholder="E-mail" type="text" value="">
+                <input class="texto estado" placeholder="Estado" type="text" value="" maxlength="2">
+                <input class="texto cidade" placeholder="Cidade" type="text" value="">
+                <input class="texto endereco" placeholder="Endereço" type="text" value="">
+                <input class="texto cep" placeholder="CEP" type="number" value="">
                 <input class="texto telefone" placeholder="Telefone para contato" type="number" value="">
             </div>
 
@@ -37,11 +40,11 @@
             <p>Tipo de conta</p>
 
             <div class="check">
-                <input name="conta" type="radio" id="conta-1" value="">
+                <input name="conta" type="radio" id="conta-1" value="Conta Corrente">
                 <label for="conta-1">Conta Corrente</label>
             </div>
             <div class="check">
-                <input name="conta" type="radio" id="conta-2" value="">
+                <input name="conta" type="radio" id="conta-2" value="Conta Poupança">
                 <label for="conta-1">Conta Poupança</label>
             </div>
 
