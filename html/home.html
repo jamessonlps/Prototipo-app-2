@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/home.css">
     <title>WWM - Home</title>
-    <!-- <script src="../js/forms-dados.js"></script> -->
+    <script src="../js/home.js"></script>
 </head>
 <body>
     <header>
@@ -17,14 +17,35 @@
     </header>
     
     <main>
-        <div class='carrossel'>
-            <img src='../img/carrossel.jpg' alt='Carrossel de Anúncios'>
+        <!-- ANUNCIOS - Carrossel -->
+        <div class='carrossel' id='carrossel'>
+            <div class='imgban' id='imgban3'>
+                <div class='imgban-box'> 
+                    <!-- <h2> Cantor 1</h2> -->
+                    <!-- <p> Cidade do Tchola</p> -->
+                </div>
+            </div>
 
-            <!-- ANUNCIOS - Carrossel -->
+            <div class='imgban' id='imgban2'>
+                <div class='imgban-box'> 
+                    <!-- <h2> Cantor 1</h2> -->
+                    <!-- <p> Cidade do Tchola</p> -->
+                </div>
+            </div>
+
+            <div class='imgban' id='imgban1'> 
+                <div class='imgban-box'> 
+                    <!-- <h2> Cantor 1</h2> -->
+                    <!-- <p> Cidade do Tchola</p> -->
+                </div>
+            </div>
+
+            <div class='imgbanbtn imgbanbtn-next' id='imgbanbtn-next'> </div>
+
         </div>
 
-        <h2 class='titulo_secao'> Storyline </h2>
         <ul class='storyline'>
+            <h2 class='titulo_secao'> Storyline </h2>
             <li class='post'>
                 <div class='cabecalho_post'> 
                     <img src='../img/elton jhonas.jpg' alt='Foto de perfil'>
@@ -100,6 +121,9 @@
                     
         </ul>
 
+        <img class='loading_img' src='../img/loading.png'> 
+        <span class='loading'> Carregando... </span>
+
         
         <div class='BOTOES_MENU'>
             <div class='menu'> 
@@ -123,9 +147,6 @@
                 Perfil
             </div>       
         </div>
-
-        <img class='loading_img' src='../img/loading.png'> 
-        <span class='loading'> Carregando... </span>
     </main>
 </body>
 </html>

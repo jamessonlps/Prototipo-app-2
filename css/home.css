@@ -27,7 +27,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: .02rem;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     height: 100%;
     overflow: scroll;
 }
@@ -39,17 +39,103 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 40%;
+    height: 45%;
     width: 100%;
     background-color:goldenrod;
-    margin: .1rem .1rem 1rem;
+    /* margin: .1rem .1rem 1rem; */
+    margin: 0 auto;
+    overflow: hidden;
+    /* position: relative; */
+    top: .1rem;
 }
-/* Ajuste da Imagem do Anúncio no Carrossel */
-.carrossel img{
-    display:flex;
-    align-content: center;
+/* Ajuste das Imagens do Anúncio no Carrossel */
+.imgban {
+    width: 98%; 
     height: 96%;
-    width: 96%;
+    /* position: absolute;  */
+    /* Só funciona se tiver um relative antes*/
+    /* top: 2%; */
+    /* left: 1%; */
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+
+/* Define quais serão as imagens do Carrossel de Anúncios */
+.carrossel #imgban3 {
+    background-image: url(../banner/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carrossel #imgban2 {
+    background-image: url(../banner/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carrossel #imgban1 {
+    background-image: url(../banner/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ajuste do botão de avançar*/
+.imgbanbtn {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    border-radius: .2rem;
+    position: absolute;
+    top: 0; 
+    z-index: 2000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.imgbanbtn:hover {
+    opacity: 0.9;
+}
+
+.imgbanbtn-next {
+    right: 1%;
+    background-image: url(../banner/next.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+/* Configuração dos Títulos nos Anúncios */
+.carrossel .imgban-box h2 {
+    font-family: arial;
+    font-size: 60px;
+    color: #fff;
+    
+}
+
+/* Subtítulo */
+.carrossel .imgban-box p {
+    font-family: arial;
+    padding-top: 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Posicionamento do anúncio em cada imagem */
+.carrossel #imgban3 .imgban-box {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.carrossel #imgban2 .imgban-box {
+    padding-top: 100px;
+    padding-right: 100px;
+    float: right;
+    text-align: right;
+}
+.carrossel #imgban1 .imgban-box {
+    padding-top: 70px;
+    padding-left: 100px;
 }
 
 /* Título Seção */
@@ -64,7 +150,9 @@ main {
 .storyline{
     display:flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    /* position: relative;
+    top: 41%; */
+    justify-content: space-between;
     /* height: 50rem; */
     padding: .5rem 1rem 0 1rem;
 }
