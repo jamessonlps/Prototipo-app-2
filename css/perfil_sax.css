@@ -8,6 +8,7 @@ body{
     width: 100%;
     margin: 0rem;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #314a6b;
 }
 
 #container{
@@ -72,7 +73,7 @@ header{
     border: 0.3rem solid black;
     font-size: 0.6rem;
     padding: auto;
-    background-color: burlywood;
+    background-color:  #b5ceee;
 }
 
 button{
@@ -95,6 +96,7 @@ div{
     position: relative;
     top: 17vh;
     width: 90%;
+    background-color: #6ba3eb;
 }
 
 /* seções com as tags de habilidade e estilo */
@@ -103,6 +105,7 @@ div{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 0 1.5rem 0;
+    background-color: #b5ceee;
 }
 
 /* tags de habilidades e estilos */
@@ -117,4 +120,5 @@ div{
 /* margens gerais */
 .descricao, .fotos, .videos, .depoimentos {
     margin: 1.5rem 0 0 0;
+    background-color: #b5ceee;
 }
