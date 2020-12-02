@@ -42,7 +42,6 @@ main {
     align-items: center;
     height: 100%;
     width: 100%;
-    /* background-color: aquamarine; */
 }
 
 
@@ -53,8 +52,6 @@ main {
     align-items: center;
     border: 1px solid black;
     border-radius: 1rem;
-    /* border-bottom-left-radius: 1rem; */
-    /* border-bottom-right-radius: 1rem; */
     height: 40%;
     width: 60%;
 }
@@ -78,8 +75,8 @@ main {
     align-items: center;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color: antiquewhite;
-    color:navy;
+    background-color: #b5ceee;
+    color: black;
     font-style: normal;
 }
 
