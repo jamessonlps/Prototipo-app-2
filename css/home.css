@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif; /* Fonte principal */
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    background-color: #00289e;
+    background-color: #314a6b;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
 .carrossel{
     height: 100%;
     width: 100%;
-    background-color:#9E6826;
+    background-color:#6ba3eb;
     overflow: hidden;
     position: relative;
     top: .1rem;
@@ -76,7 +77,7 @@ main {
     background-repeat: no-repeat;
 }
 
-/* Ajuste do botão de avançar*/
+/* Ajuste do botão de avançar
 .imgbanbtn {
     width: 2rem;
     height: 2rem;
@@ -99,15 +100,16 @@ main {
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 .ver_perfil {
     position: absolute;
     bottom: 8%;
     left: 4%;
     padding: .2rem 1rem;
-    background-color:#9e760c;
+    background-color:#314a6b;
     font-size: 28px;
+    font-weight: bold;
     color:white;
     z-index: 6000;
     border: 1px solid white;
@@ -116,21 +118,19 @@ main {
 }
 /* Configuração dos Títulos nos Anúncios */
 .carrossel .imgban-box h2 {
-    font-family: arial;
     font-size: 36px;
     font-weight: bold;
     text-shadow:4px 4px black;    
-    color: #fff;
+    color: white;
     
 }
 
 /* Subtítulo */
 .carrossel .imgban-box p {
-    font-family: arial;
     padding-top: .2rem;
     font-size: 20px;
     text-shadow:4px 4px black;    
-    color: #EBB26B;
+    color: #314a6b;
 }
 
 /* Posicionamento do anúncio em cada imagem */
@@ -139,11 +139,7 @@ main {
     position: absolute;
     left: 1.5rem;
     top: 2rem;
-    /* padding-top: 1rem; */
-    /* padding-left: 10px; */
-    /* border: 2px solid red; */
     float: right;
-    /* text-align: right; */
 }
 
 
@@ -152,9 +148,8 @@ main {
 /* Título Seção */
 .titulo_secao{
     margin-top: 1.5rem;
-    font-family: fantasy;
     font-size: 20px;
-    color: #25779E;
+    color: #547fb8;
     font-size: larger;
     margin-left: .6rem;
 }
@@ -172,10 +167,9 @@ main {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1rem;
-    background-color: #b9c6d66b;
+    background-color: #b5ceeeb9;
     border-radius: .4rem;
     padding: .4rem;
-    font-family: 'Arial Narrow', sans-serif;
     font-size: 16px;
     justify-content: space-between;
     
@@ -199,17 +193,19 @@ main {
     flex-direction: column;
 }
 .Nome{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
 }
 .info_gerais{
-    font-family: cursive;
+    font-style: italic;
     font-size: small;
 }
 .conteudo_post{
     padding: .2rem;
+    font-family: 'Roboto Slab', serif; /* fonte para Textos Longos */
 }
 .link{
-    color: darkblue;
+    color: #314a6b;
     font-style: oblique;
 }
 .video{
@@ -266,7 +262,7 @@ main {
     width: 100%;
     justify-content: space-evenly;
     padding: .1rem;
-    background-color: rgba(245, 245, 245, 0.164);
+    background-color: white;
     border-top: .05rem solid black;
 }
 
@@ -278,7 +274,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    font-family: 'Arial Narrow';
 }
 .menu a{
     display: flex;
@@ -310,7 +305,7 @@ a {
 
 .botao_nova_postagem img{
     position: fixed;
-    background-color: #65A1EB;
+    background-color: #547fb8;
     height: 2.5rem;
     width: 2.5rem;
     bottom: 10rem;
@@ -320,17 +315,17 @@ a {
 
 .botao_nova_postagem .comando {
     position: fixed;
-    background-color: #b5ceee;
+    background-color: #547fb8;
     padding: .2rem .8rem;
     right: 4.5rem;
     bottom: 10.5rem;
     border-radius: .5rem;
-    color: #042957;
+    color: black;
     font-style: bold;
 }
 .botao_novo_anuncio img{
     position: fixed;
-    background-color: #65A1EB;
+    background-color:  #547fb8;
     height: 2.5rem;
     width: 2.5rem;
     bottom: 14rem;
@@ -340,12 +335,12 @@ a {
 }
 .botao_novo_anuncio .comando {
     position: fixed;
-    background-color: #b5ceee;
+    background-color: #547fb8;
     padding: .2rem .8rem;
     right: 4.5rem;
     bottom: 14.5rem;
     border-radius: .5rem;
-    color: #042957;
+    color: black;
     font-style: bold;
 }
 /* ------------------------------------------- */

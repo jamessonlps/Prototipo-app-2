@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/filtrar_musicos.css">
     <title>WWM - Filtrar Pesquisa</title>
-    <script src="../js/filtrar_musicos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -48,31 +49,38 @@
 
         <div class='categoria'>
             <h2 class='titulo_cat'> Distância: </h2> 
-            Até <input type="number"> Km
-
+            <span class='distancia'> Até <input type="number" > Km </span>
         </div>
 
-        <select class="habilidades">
-            <option class="opcao-habilidade" selected disabled> Filtrar por Habilidades </option>
-            <option>Voz</option>
-            <option>Violão</option>
-            <option>Bateria</option>
-            <option>Baixo</option>
-            <option>Guitarra</option>
-            <option>Saxofone</option>
-            <option>Composição</option>
-        </select>
+        <div class='categoria'>
+            <h2 class='titulo_cat'> Habilidades: </h2> 
+            <select>
+                <option class="opcao-habilidade" selected disabled> Filtrar por Habilidades </option>
+                <option>Voz</option>
+                <option>Violão</option>
+                <option>Bateria</option>
+                <option>Baixo</option>
+                <option>Guitarra</option>
+                <option>Saxofone</option>
+                <option>Composição</option>
+            </select>
+        </div>
         
-        <select class="estilos">
-            <option class="opcao-estilo" selected disabled> Filtrar por Estilos Musicais</option>
-            <option>Rock Nacional</option>
-            <option>Rock Internacional</option>
-            <option>Sertanejo</option>
-            <option>Axé</option>
-            <option>Forró</option>
-            <option>Blues</option>
-            <option>Música Clássica</option>
-        </select>
+        <div class='categoria'>
+            <h2 class='titulo_cat'> Estilos: </h2> 
+            <select>
+                <option class="opcao-estilo" selected disabled> Filtrar por Estilos Musicais</option>
+                <option>Rock Nacional</option>
+                <option>Rock Internacional</option>
+                <option>Sertanejo</option>
+                <option>Axé</option>
+                <option>Forró</option>
+                <option>Blues</option>
+                <option>Música Clássica</option>
+            </select>
+        </div>
+
+        <a class="aplicar" href='pesquisa_saxofonistas.html'> Aplicar </a>
 
     </main>
 <body>
