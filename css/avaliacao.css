@@ -92,3 +92,6 @@ button{
   justify-content: center;
   align-items: center;
   }
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}

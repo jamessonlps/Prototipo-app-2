@@ -30,7 +30,6 @@ header h1{
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  font-family: 'Arial Narrow';
 }
 
 .month{
@@ -48,7 +47,9 @@ header h1{
 }
 
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 /* Month header */
 .month {
