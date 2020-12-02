@@ -104,7 +104,7 @@ h2 {
 /* botao para os dois casos */
 .botao {
     color: white;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-size: 1rem;
     padding: .6rem;
     border-radius: .3rem;
@@ -119,4 +119,8 @@ h2 {
 
 .enviar {
     align-self: center;
+}
+
+.galeriaFoto {
+    width: 10rem;
 }
