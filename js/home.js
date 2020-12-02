@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('imgban1').style.right = '0px';
                 document.getElementById('imgban1').style.zIndex = '1000';
     
-                document.getElementById('imgban2').style.right = '-600px';
+                document.getElementById('imgban2').style.right = '-20rem';
                 document.getElementById('imgban2').style.zIndex = '1500';
     
-                document.getElementById('imgban3').style.right = '600px';
+                document.getElementById('imgban3').style.right = '20rem';
                 document.getElementById('imgban3').style.zIndex = '500';
             }, 500);
             setTimeout(function() {
@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('imgban2').style.right = '0px';
                 document.getElementById('imgban2').style.zIndex = '1000';
     
-                document.getElementById('imgban3').style.right = '-600px';
+                document.getElementById('imgban3').style.right = '-20rem';
                 document.getElementById('imgban3').style.zIndex = '1500';
     
-                document.getElementById('imgban1').style.right = '600px';
+                document.getElementById('imgban1').style.right = '20rem';
                 document.getElementById('imgban1').style.zIndex = '500';
             }, 500);
             setTimeout(function() {
@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('imgban3').style.right = '0px';
                 document.getElementById('imgban3').style.zIndex = '1000';
     
-                document.getElementById('imgban1').style.right = '-600px';
+                document.getElementById('imgban1').style.right = '-20rem';
                 document.getElementById('imgban1').style.zIndex = '1500';
     
-                document.getElementById('imgban2').style.right = '600px';
+                document.getElementById('imgban2').style.right = '20rem';
                 document.getElementById('imgban2').style.zIndex = '500';
             }, 500);
             setTimeout(function() {

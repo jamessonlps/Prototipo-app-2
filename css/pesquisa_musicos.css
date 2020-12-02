@@ -78,6 +78,7 @@ ul{
     margin: 1rem .5rem .2rem .5rem;
     height: 3.5rem;
     width: 3.5rem;
+    border-radius: 2rem;
     /* border: 2px solid black; */
 }
 
@@ -177,4 +178,8 @@ ul{
 h1 {
     color: white;
     font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
 }

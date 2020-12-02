@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    /* background-color: black; */
 }
 
 header {
@@ -27,7 +26,6 @@ main {
     display: flex;
     flex-direction: column;
     padding: .02rem;
-    /* background-color: aquamarine; */
     height: 100%;
     overflow: scroll;
 }
@@ -38,7 +36,6 @@ main {
     height: 100%;
     width: 100%;
     background-color:#9E6826;
-    /* margin: 0 auto; */
     overflow: hidden;
     position: relative;
     top: .1rem;
@@ -282,16 +279,21 @@ main {
     align-items: center;
     background-color: white;
     font-family: 'Arial Narrow';
-
-
 }
-
-.menu img{
-    display:flex;
+.menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu a img{
     width: 2rem;
     height: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 .botao_add{
     position: fixed;
     height: 4rem;
