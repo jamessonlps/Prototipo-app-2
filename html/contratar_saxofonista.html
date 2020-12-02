@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contratando Saxofonista</title>
-    <link rel="stylesheet" href="../css/contratar_saxofonista.css">
+    <link rel="stylesheet" href="\css\contratar_saxofonista.css">
     <script src="/js/contratar_saxofonista.js"></script>
 </head>
 
@@ -81,10 +81,11 @@
                     <label for="Valor"> Valor: </label>
                     <input type="text" name="Valor">
 
-                    <p class="button">Concordar com valor</p>
+                    <a class="button">
+                        <p id="active" class="button">Concordar com valor</p>
 
-                    <p class="button">Propor outro valor</p>
-
+                        <p id="active" class="button">Propor outro valor</p>
+                    </a>
                 </form>
 
             </div>
@@ -116,11 +117,14 @@
 
     </main>
 
-     <div id="modal-concluido" class="modal-container">
+     <div id="modal-concluido" class="modal_container">
          <div class="modal2">
+
              <button class="fechar">X</button>
-            <h3 class="subtitulo">Concluído</h3>
-            <img src="/img/check_blue.png" alt="check"> 
+            
+            <img src="/img/check_blue.png" alt="check" class="check">
+            
+            <h3 class="subtitulo">Proposta realizada com sucesso</h3>
          </div>
      </div>
 
