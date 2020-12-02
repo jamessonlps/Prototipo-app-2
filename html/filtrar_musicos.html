@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/filtrar_musicos.css">
+    <title>WWM - Filtrar Pesquisa</title>
+    <script src="../js/filtrar_musicos.js"></script>
+</head>
+<body>
+    <header>
+        <a class="voltar" href="#">
+            <img src="../img/back.png" alt="voltar">
+        </a>
+        <h1> Filtrar Músicos </h1>
+    </header>
+
+    <main>
+        <div class='categoria'> 
+            <h2 class='titulo_cat'> Dias da Semana: </h2>
+    
+            <ul class='dias_semana'>
+                <li class='dia'> Seg </li> 
+                <li class='dia'> Ter </li> 
+                <li class='dia'> Qua </li> 
+                <li class='dia'> Qui </li> 
+                <li class='dia'> Sex </li> 
+                <li class='dia'> Sab </li> 
+                <li class='dia'> Dom </li> 
+            </ul>
+            
+            
+        </div>
+
+        <div class='categoria'>
+            <h2 class='titulo_cat'> Período: </h2>
+    
+            <ul class='periodo_dia'>
+                <li class='horarios'> Manhã</li>
+                <li class='horarios'> Tarde</li>
+                <li class='horarios'> Noite</li>
+                <li class='horarios'> Madrugada</li>
+                
+            </ul>
+        </div>
+
+        <div class='categoria'>
+            <h2 class='titulo_cat'> Distância: </h2> 
+            Até <input type="number"> Km
+
+        </div>
+
+        <select class="habilidades">
+            <option class="opcao-habilidade" selected disabled> Filtrar por Habilidades </option>
+            <option>Voz</option>
+            <option>Violão</option>
+            <option>Bateria</option>
+            <option>Baixo</option>
+            <option>Guitarra</option>
+            <option>Saxofone</option>
+            <option>Composição</option>
+        </select>
+        
+        <select class="estilos">
+            <option class="opcao-estilo" selected disabled> Filtrar por Estilos Musicais</option>
+            <option>Rock Nacional</option>
+            <option>Rock Internacional</option>
+            <option>Sertanejo</option>
+            <option>Axé</option>
+            <option>Forró</option>
+            <option>Blues</option>
+            <option>Música Clássica</option>
+        </select>
+
+    </main>
+<body>
+    
+</body>
+</html>

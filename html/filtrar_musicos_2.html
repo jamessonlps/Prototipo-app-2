@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/novo-perfil-musico.css">
+        <script src="../js/novo-perfil-musico.js"></script>
+        <title> WWM - Filtrar Pesquisa </title>
+    </head>
+    <body>
+        <header>
+            <a class="voltar" href="#">
+                <img src="../img/back.png" alt="voltar">
+            </a>
+            <h1>Novo perfil de músico</h1>
+        </header>
+
+        
+        <main>
+            <h2>
+                Agora, insira informações que detalhem mais o seu 
+                trabalho com a música em geral.
+            </h2>
+
+            <div class="img-perfil-container">
+                <img class="perfil" src="../img/user.png" alt="foto de perfil">
+                <p class="pseudo-botao btn-1" for="seleciona-foto">Adicionar foto</p>
+            </div>
+
+            <div class="campo">
+                <label>Habilidades*</label>
+                <select class="habilidades">
+                    <option class="opcao-habilidade" selected disabled>Selecione aqui suas habilidades</option>
+                    <option>Voz</option>
+                    <option>Violão</option>
+                    <option>Bateria</option>
+                    <option>Baixo</option>
+                    <option>Guitarra</option>
+                    <option>Saxofone</option>
+                    <option>Composição</option>
+                </select>
+            </div>
+
+            <p class="habilidadesP">Nenhuma habilidade selecionado ainda</p>
+            <div class="tagsHabil"></div>
+
+            <div class="campo">
+                <label>Estilos musicais*</label>
+                <select class="estilos">
+                    <option class="opcao-estilo" selected disabled>Selecione aqui seus estilos musicais</option>
+                    <option>Rock Nacional</option>
+                    <option>Rock Internacional</option>
+                    <option>Sertanejo</option>
+                    <option>Axé</option>
+                    <option>Forró</option>
+                    <option>Blues</option>
+                    <option>Música Clássica</option>
+                </select>
+            </div>
+
+            <p class="estilosP">Nenhum estilo selecionada ainda</p>
+            <div class="tagsEstilo"></div>
+
+            <div class="campo">
+                <p>Detalhes adicionais*:</p>
+                <input type="text" placeholder="Especifique mais aqui sobre o seu trabalho, faça com que os outros entendam melhor o seu trabalho.">
+            </div>
+
+            <div class="campo">
+                <p>
+                    Você também pode adicionar fotos para que os outros 
+                    músicos e contratantes vejam:
+                </p>
+                <p class="btn-2 pseudo-botao">Adicionar fotos</p>
+            </div>
+
+            <div class="campo">
+                <p>
+                    Você também pode adicionar vídeos para que os outros 
+                    músicos e contratantes vejam:
+                </p>
+                <p class="btn-2 pseudo-botao">Adicionar vídeos</p>
+            </div>
+
+            <a class="enviar botao-off">Confirmar</a>
+        </main>
+    </body>
+</html>
