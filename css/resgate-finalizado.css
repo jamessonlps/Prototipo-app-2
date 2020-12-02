@@ -27,7 +27,7 @@ header {
     flex-direction: row;
     align-items: center;
     height: 5rem;
-    background-color: #0E516E;
+    background-color: #314a6b;
     text-align: center;
 }
 
@@ -68,6 +68,6 @@ p {
     padding: .7rem 1.1rem;
     font-size: 1.1rem;
     color: white;
-    background-color: #0E516E;
+    background-color: #314a6b;
     border-radius: .7rem;
 }

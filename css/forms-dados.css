@@ -26,7 +26,7 @@ header {
     flex-direction: row;
     align-items: center;
     height: 5rem;
-    background-color: #0E516E;
+    background-color: #314A6B;
     text-align: center;
 }
 
@@ -40,6 +40,7 @@ h1 {
 main {
     display: flex;
     flex-direction: column;
+    /* overflow: scroll; */
 }
 
 input.texto {
@@ -75,7 +76,6 @@ p {
     flex-direction: row;
     margin: .6rem 0;
     padding: 0 1rem;
-    color: slategray;
     font-size: 1.2rem;
 }
 
@@ -98,7 +98,7 @@ p {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     color: white;
-    background-color: #1E8A00;
+    background-color: #314A6B;
     border-radius: .7rem;
 }
 
@@ -108,6 +108,6 @@ p {
     padding: .7rem 1rem;
     font-size: 1.2rem;
     color: white;
-    background-color: #696969;
+    background-color: #515D6B;
     border-radius: .7rem;
 }

@@ -48,40 +48,52 @@ document.addEventListener('DOMContentLoaded', function() {
     // Detecta qualquer entrada em cada input e chama função
     // que verifica se os dados já estão preenchidos
     nome.addEventListener('input', function() {
+        localStorage.setItem('nome', nome.value)
         atualizaSubmit()
     });
     email.addEventListener('input', function() {
+        localStorage.setItem('email', email.value)
         atualizaSubmit()
     });
     estado.addEventListener('input', function() {
+        localStorage.setItem('estado', estado.value)
         atualizaSubmit()
     });
     cidade.addEventListener('input', function() {
+        localStorage.setItem('cidade', cidade.value)
         atualizaSubmit()
     });
     endereco.addEventListener('input', function() {
+        localStorage.setItem('endereco', endereco.value)
         atualizaSubmit()
     });
     cep.addEventListener('input', function() {
+        localStorage.setItem('cep', cep.value)
         atualizaSubmit()
     });
     telefone.addEventListener('input', function() {
+        localStorage.setItem('telefone', telefone.value)
         atualizaSubmit()
     });
     cpf.addEventListener('input', function() {
+        localStorage.setItem('cpf', cpf.value)
         atualizaSubmit()
     });
     nascimento.addEventListener('input', function() {
+        localStorage.setItem('nascimento', nascimento.value)
         atualizaSubmit()
     });
     agencia.addEventListener('input', function() {
+        localStorage.setItem('agencia', agencia.value)
         atualizaSubmit()
     });
     numeroConta.addEventListener('input', function() {
+        localStorage.setItem('numeroConta', numeroConta.value)
         atualizaSubmit()
     });  
     banco.addEventListener('change', function() {
         opcaoBanco = this.options[this.selectedIndex]
+        localStorage.setItem('banco', opcaoBanco.text)
         atualizaSubmit()
     });
     for (conta of contas) {
@@ -95,28 +107,10 @@ document.addEventListener('DOMContentLoaded', function() {
         for (conta of contas) {
             if (conta.checked) {
                 opcaoConta = conta.value
+                localStorage.setItem('conta', opcaoConta)
                 atualizaSubmit()
             }
         }
     }
-   
-
-    // carrega dados para páginas seguintes
-    confirmar = document.querySelector('.botao-on')
-    confirmar.addEventListener('click', function() {
-        localStorage.setItem('nome', nome.value)
-        localStorage.setItem('email', email.value)
-        localStorage.setItem('estado', estado.value)
-        localStorage.setItem('cidade', cidade.value)
-        localStorage.setItem('endereco', endereco.value)
-        localStorage.setItem('cep', cep.value)
-        localStorage.setItem('telefone', telefone.value)
-        localStorage.setItem('cpf', cpf.value)
-        localStorage.setItem('nascimento', nascimento.value)
-        localStorage.setItem('agencia', agencia.value)
-        localStorage.setItem('numeroConta', numeroConta.value)
-        localStorage.setItem('banco', opcaoBanco.text)
-        localStorage.setItem('conta', opcaoConta)
-    })
 
 })

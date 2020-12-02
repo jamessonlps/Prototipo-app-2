@@ -27,7 +27,7 @@ header {
     flex-direction: row;
     align-items: center;
     height: 5rem;
-    background-color: #0E516E;
+    background-color: #314a6b;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ h1 {
     align-self: center;
     color: white;
     font-size: 1.7rem;
-    width: calc(100% - 5rem);
+    width: calc(100% - 7rem);
 }
 
 main {
@@ -50,6 +50,10 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
+}
+
+h2.historico, h2.dados {
+    align-self: flex-start;
 }
 
 p {
@@ -68,11 +72,11 @@ img.wallet, a.resgatar, h2 {
 
 /* cards do histórico */
 .card-historico {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 1rem 0;
     padding: .5rem;
-    background-color: #F8F8F8;
+    background-color: #b5ceee71;
     border-radius: .5rem;
 }
 
@@ -87,7 +91,7 @@ p.enfase {
 }
 
 p.grana {
-    color: #17972C;
+    color: #314a6b;
     font-weight: bold;
 }
 
@@ -100,7 +104,7 @@ p.grana {
 .resgatar {
     margin: .5rem 0 1.5rem 0;
     color: white;
-    background-color: #0E516E;
+    background-color: #314a6b;
     padding: .7rem 1.1rem;
 }
 
@@ -108,12 +112,11 @@ p.grana {
     font-size: 1rem;
     margin-top: 1rem;
     color: black;
-    border: .15rem solid #0E516E;
+    border: .15rem solid #314a6b;
     padding: .3rem 1.1rem;
 }
 
 .cinza {
     margin-top: .5rem;
     text-align: justify;
-    color: gray;
 }

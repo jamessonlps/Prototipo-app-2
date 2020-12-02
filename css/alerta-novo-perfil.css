@@ -45,6 +45,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -55,9 +56,11 @@ a {
 }
 
 .criar-perfil {
-    background-color: #1E8A00;
+    background-color: #314A6B;
 }
 
 .voltar {
-    background-color: #0E516E;
+    font-weight: bold;
+    color: #314A6B;
+    border: .2rem solid #314A6B;
 }

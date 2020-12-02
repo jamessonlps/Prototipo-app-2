@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/e-wallet.css">
         <title>e-Wallet</title>
+        <script src="../js/e-wallet.js"></script>
     </head>
     <body>
         <header>
@@ -18,23 +19,23 @@
         <main>
             <img class="wallet" src="../img/wallet.png" alt="carteira">
 
-            <h2>Salto atual: R$ 400,00</h2>
+            <h2 class="saldo">Salto atual: R$ 0,00</h2>
 
-            <a class="botao resgatar" href="#">Resgatar</a>
+            <a class="botao resgatar" href="./resgatar-valor.html">Resgatar</a>
 
-            <h2>Meu histórico</h2>
+            <h2 class="historico">Meu histórico</h2>
 
             <div class="card-historico">
                 <div class="registro">
                     <p class="enfase">Nando do Bar do Everest</p>
-                    <p class="grana">+R$ 400,00</p>
+                    <p class="grana">+R$ </p>
                 </div>
                 <p>Data: 05/11/2020</p>
                 <p>Rua Garden, número 252, Vila Dourada, São Paulo -SP</p>
                 <a class="botao secundario" href="#">Ver mais</a>
             </div>
 
-            <h2>Dados de pagamento</h2>
+            <h2 class="dados">Dados de pagamento</h2>
 
             <p class="cinza">
                 Você ainda não tem um cartão de crédito cadastrado 

@@ -1,0 +1,40 @@
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: #314a6b;
+    color: white;
+    padding: .6rem .9rem;
+    margin-top: 2rem;
+    border-radius: .4rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.falso-body {
+    margin: 12rem 3rem;
+}
+
+.card-popup {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.3rem;
+    background-color: #b5ceee;
+    border-radius: 1rem;
+    align-items: center;
+}
