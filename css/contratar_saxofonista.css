@@ -6,6 +6,7 @@ header h1{
   height: 3.7rem;
   font-weight: bold;
   width: 100%;
+  background-color: #6ba3eb;
 }
 
 .BOTOES_MENU{
@@ -55,7 +56,7 @@ body {
 .month {
 padding: 50px 1px 70px 1px;
 width: 100%;
-background: #1abc9c;
+background: #b5ceee;
 text-align: center;
 }
 
@@ -118,7 +119,7 @@ color: #777;
 /* Highlight the "current" day */
 .days li .active {
 padding: 5px;
-background: #1abc9c;
+background: #b5ceee;
 color: white !important
 }
 
