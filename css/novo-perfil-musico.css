@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {

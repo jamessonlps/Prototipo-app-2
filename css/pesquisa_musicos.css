@@ -10,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    /* background-color: rgb(140, 149, 12); */
+    font-family: 'Source Sans Pro', sans-serif; /* Fonte principal */
+
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    background-color: #0E516E;
+    background-color: #314a6b;
 }
 
 .botao_filtro{
@@ -48,7 +49,6 @@ main {
     height: 100%;
     width: 100%;
     overflow: scroll;
-    /* background-color: aquamarine; */
 }
 
 /* ------------------------------ */
@@ -66,10 +66,9 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* background-color: rgb(151, 221, 238); */
     font-size: 16px;
     margin: .7rem 0 0 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #515d6b;
 
 }
 
@@ -79,7 +78,6 @@ ul{
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 2rem;
-    /* border: 2px solid black; */
 }
 
 .info_musico{
@@ -87,20 +85,19 @@ ul{
     flex-direction: column;
     width: 55%;
     padding: .6rem 0 .6rem 0 ;
-    /* border: 1px solid red; */
 }
 .Nome{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
+    font-weight: bold;
 }
 .info_gerais{
-    font-family: cursive;
+    font-style: oblique;
     font-size: small;
     margin: .2rem 0 .5rem 0;
-    color: rgb(12, 72, 182);
+    color: #314a6b;
 }
 .info_musico p{
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .interagir{
@@ -108,22 +105,22 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-evenly; */
     margin: 0 .5rem 0 .1rem;
-    /* border: 1px solid white; */
 }
 
 .distancia{
-    font-family: Impact;
+    font-style: oblique;
+    font-weight: bold;
+    color: #515D6b;
     margin-bottom: .5rem;
 }
 
 .botao_ver_perfil{
-    background-color: crimson;
-    color: whitesmoke;
+    background-color: #314a6b;
+    color: white;
     padding: .2rem .5rem .2rem .5rem;
     border: 2px solid black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 /* ===================================== */
 .loading{
@@ -150,7 +147,7 @@ ul{
     width: 100%;
     justify-content: space-evenly;
     padding: .1rem;
-    background-color: rgba(245, 245, 245, 0.164);
+    background-color: white;
     border-top: .05rem solid black;
 }
 
@@ -162,7 +159,6 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    font-family: 'Arial Narrow';
 
 
 }
