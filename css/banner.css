@@ -30,19 +30,19 @@ body{
 }
 
 .main-banner #imgban3 {
-    background-image: url(../banner/banner3.jpg);
+    background-image: url(../img/saxofonista.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .main-banner #imgban2 {
-    background-image: url(../banner/banner2.jpg);
+    background-image: url(../img/vocalista.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .main-banner #imgban1 {
-    background-image: url(../banner/banner1.jpg);
+    background-image: url(../img/dj.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

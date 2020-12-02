@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    /* background-color: rgb(140, 149, 12); */
+    /* background-color: black; */
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    background-color: #0E516E;
+    background-color: #00289e;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: .02rem;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: 100%;
     overflow: scroll;
 }
@@ -35,27 +35,24 @@ main {
 
 /* Ajustos do Carrossel */
 .carrossel{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 45%;
+    height: 100%;
     width: 100%;
-    background-color:goldenrod;
-    /* margin: .1rem .1rem 1rem; */
-    margin: 0 auto;
+    background-color:#9E6826;
+    /* margin: 0 auto; */
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
     top: .1rem;
+    left: 0;
+    padding: 40%;
 }
 /* Ajuste das Imagens do Anúncio no Carrossel */
 .imgban {
     width: 98%; 
     height: 96%;
-    /* position: absolute;  */
+    position: absolute; 
     /* Só funciona se tiver um relative antes*/
-    /* top: 2%; */
-    /* left: 1%; */
+    top: 2%;
+    left: 1%;
     transition: all ease-in-out 500ms;
     -webkit-transition: all ease-in-out 500ms;
     -moz-transition: all ease-in-out 500ms;
@@ -64,19 +61,19 @@ main {
 
 /* Define quais serão as imagens do Carrossel de Anúncios */
 .carrossel #imgban3 {
-    background-image: url(../banner/banner3.jpg);
+    background-image: url(../img/saxo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .carrossel #imgban2 {
-    background-image: url(../banner/banner2.jpg);
+    background-image: url(../img/vocalista.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .carrossel #imgban1 {
-    background-image: url(../banner/banner1.jpg);
+    background-image: url(../img/dj3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,13 +83,14 @@ main {
 .imgbanbtn {
     width: 2rem;
     height: 2rem;
-    background-color: #000;
+    background-color: white;
     border-radius: .2rem;
     position: absolute;
-    top: 0; 
-    z-index: 2000;
+    top: 2rem; 
+    z-index: 8000;
     opacity: 0.8;
     cursor: pointer;
+    border: 4px solid yellow;
 }
 .imgbanbtn:hover {
     opacity: 0.9;
@@ -104,12 +102,27 @@ main {
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.ver_perfil {
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+    padding: .2rem 1rem;
+    background-color:#9e760c;
+    font-size: 28px;
+    color:white;
+    z-index: 6000;
+    border: 1px solid white;
+
 
 }
 /* Configuração dos Títulos nos Anúncios */
 .carrossel .imgban-box h2 {
     font-family: arial;
-    font-size: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow:4px 4px black;    
     color: #fff;
     
 }
@@ -117,43 +130,42 @@ main {
 /* Subtítulo */
 .carrossel .imgban-box p {
     font-family: arial;
-    padding-top: 6px;
-    font-size: 16px;
-    color: #fff;
+    padding-top: .2rem;
+    font-size: 20px;
+    text-shadow:4px 4px black;    
+    color: #EBB26B;
 }
 
 /* Posicionamento do anúncio em cada imagem */
-.carrossel #imgban3 .imgban-box {
-    padding-top: 100px;
-    padding-left: 100px;
-}
-.carrossel #imgban2 .imgban-box {
-    padding-top: 100px;
-    padding-right: 100px;
+
+.carrossel .imgban-box {
+    position: absolute;
+    left: 1.5rem;
+    top: 2rem;
+    /* padding-top: 1rem; */
+    /* padding-left: 10px; */
+    /* border: 2px solid red; */
     float: right;
-    text-align: right;
-}
-.carrossel #imgban1 .imgban-box {
-    padding-top: 70px;
-    padding-left: 100px;
+    /* text-align: right; */
 }
 
-/* Título Seção */
-.titulo_secao{
-    font-family: fantasy;
-    color: chocolate;
-    font-size: small;
-    margin-left: .6rem;
-}
+
 
 /* ======== Ajuste do Storyline ======= */
+/* Título Seção */
+.titulo_secao{
+    margin-top: 1.5rem;
+    font-family: fantasy;
+    font-size: 20px;
+    color: #25779E;
+    font-size: larger;
+    margin-left: .6rem;
+}
+/* Story */
 .storyline{
     display:flex;
     flex-direction: column;
-    /* position: relative;
-    top: 41%; */
-    justify-content: space-between;
-    /* height: 50rem; */
+    margin-top: 1rem;
     padding: .5rem 1rem 0 1rem;
 }
 
@@ -162,9 +174,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* height: 10rem; Ajustar para que caiba a postagem inteira */
     margin-bottom: 1rem;
-    background-color: rgb(151, 221, 238);
+    background-color: #b9c6d66b;
     border-radius: .4rem;
     padding: .4rem;
     font-family: 'Arial Narrow', sans-serif;
@@ -281,9 +292,64 @@ main {
     height: 2rem;
 }
 
+.botao_add{
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+    right: 1rem;
+    bottom: 5.5rem;
+}
+.botao_nova_postagem{
+    display: none;
+}
+.botao_novo_anuncio{
+    display: none;
+}
+
+.botao_nova_postagem img{
+    position: fixed;
+    background-color: #65A1EB;
+    height: 2.5rem;
+    width: 2.5rem;
+    bottom: 10rem;
+    right: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.botao_nova_postagem .comando {
+    position: fixed;
+    background-color: #b5ceee;
+    padding: .2rem .8rem;
+    right: 4.5rem;
+    bottom: 10.5rem;
+    border-radius: .5rem;
+    color: #042957;
+    font-style: bold;
+}
+.botao_novo_anuncio img{
+    position: fixed;
+    background-color: #65A1EB;
+    height: 2.5rem;
+    width: 2.5rem;
+    bottom: 14rem;
+    right: 1.5rem;
+    
+    border-radius: 1.5rem;
+}
+.botao_novo_anuncio .comando {
+    position: fixed;
+    background-color: #b5ceee;
+    padding: .2rem .8rem;
+    right: 4.5rem;
+    bottom: 14.5rem;
+    border-radius: .5rem;
+    color: #042957;
+    font-style: bold;
+}
 /* ------------------------------------------- */
 h1 {
     color: white;
     font-size: 1.7rem;
 }
+
 
