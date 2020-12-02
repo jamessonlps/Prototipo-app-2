@@ -76,12 +76,15 @@ header{
     background-color:  #b5ceee;
 }
 
-button{
+.button{
     position: fixed;
     top: 25%;
     left: 70%;
     font-size: 1.5rem;
     cursor: pointer;
+    background-color:  #b5ceee;
+    border: 0.1rem solid black;
+    padding: 0.3rem;
 }
 
 div{
