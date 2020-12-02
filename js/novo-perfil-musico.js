@@ -49,6 +49,49 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
 
+
+
+    galeriaFotos = document.querySelector('.campo-fotos')
+    galeriaVideos = document.querySelector('.campo-videos')
+
+    let addFotos = document.querySelector('.btn-fotos')
+    addFotos.addEventListener('click', function() {
+        // cria tag img
+        novaTag = document.createElement('img')
+        // seta atributo
+        novaTag.setAttribute('src', '../img/musicos.jpg')
+        localStorage.setItem('imgGaleria', '../img/musicos.jpg')
+        novaTag.style.width = '10rem'
+        novaTag.style.margin = '1rem'
+        // adiciona
+        galeriaFotos.appendChild(novaTag)
+        
+    })
+
+    let addVideos = document.querySelector('.btn-videos')
+    addVideos.addEventListener('click', function() {
+        // cria tag img
+        novaTag = document.createElement('img')
+        // seta atributo
+        novaTag.setAttribute('src', '../img/youtube_img.png')
+        localStorage.setItem('imgVideos', '../img/youtube_img.png')
+        novaTag.style.width = '10rem'
+        novaTag.style.margin = '1rem'
+        // adiciona
+        galeriaVideos.appendChild(novaTag)
+        
+    })
+
+
+
+
+
+
+
+
+
+
+
     // adiciona as opções de habilidades escolhidas pelo usuário
     habilidades.addEventListener('change', function() {
         // insere opção escolhida

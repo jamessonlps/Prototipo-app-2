@@ -84,6 +84,7 @@ img.perfil {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
+    flex-wrap: wrap;
 }
 
 /* botão de adicionar uma imagem */
