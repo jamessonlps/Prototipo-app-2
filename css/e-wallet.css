@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -116,7 +117,8 @@ p.grana {
     padding: .3rem 1.1rem;
 }
 
-.cinza {
+.textinho {
+    font-family: 'Roboto Slab', serif;
     margin-top: .5rem;
     text-align: justify;
 }
