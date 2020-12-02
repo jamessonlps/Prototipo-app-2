@@ -1,0 +1,94 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.11rem solid black;
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin: 0.4rem;
+    padding: 0.3rem;
+    border: 0.11rem solid black;
+    border-radius: 0.5rem;
+
+}
+
+img{
+    align-self: center;
+    height: 2rem;    
+}
+
+button{
+    position: relative;
+    left: 20rem;
+    top: 2rem;
+}
+
+.modal_container.mostrar{
+    display: flex;
+  }
+  
+  .fechar{
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.1rem solid black;
+    cursor: pointer; 
+  }
+  
+  .modal_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0rem;
+    left: 0rem;
+    background-color: rgba(0,0,0,.5);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  .check{
+      height: 30vh;  
+  }
+  
+  .modal2{
+    background-color: white;
+    width: 60vw;
+    min-width: 60%;
+    padding: 3rem;
+    border: 0.1rem solid black;
+    position:relative;
+  }
+  
+  @keyframes modal2{
+    from{
+        opacity:0;
+        transform: translate3d(0, -60px, 0)
+    }
+    to {
+        opacity:1;
+        transform: translate3d(0,0,0);
+    }
+  }
+  
+  .mostrar .modal2{
+    animation: modal2 .4s;
+  }
+  
+  .subtitulo{
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
