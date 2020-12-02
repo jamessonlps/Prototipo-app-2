@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+
     let btnFotoPerfil = document.querySelector('.btn-1')
     let fotoPerfil = document.querySelector('.perfil')
     let fotoAterada = 0
@@ -27,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // verifica se itens obrigatórios estão ok
         if (fotoAterada == 1 && 
         opcaoHabilidades.length > 0 && 
-        opcaoEstilos.length > 0) {
+        opcaoEstilos.length > 0 && 
+        detalhesMusico.value != '') {
             // ativa botão
             botao.classList.remove('botao-off')
             botao.classList.add('botao-on')
@@ -40,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btnFotoPerfil.addEventListener('click', function() {
         fotoPerfil.removeAttribute('src')
         fotoPerfil.setAttribute('src', '../img/fake-circular.png')
+        fotoPerfil = fotoPerfil.getAttribute('src')
+        localStorage.setItem('fotoPerfil', fotoPerfil)
         fotoAterada = 1
         atualizaSubmit()
     })
@@ -53,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // limpa lista para evitar repetição
         limpo = new Set(opcaoHabilidades)
         opcaoHabilidades = [...limpo]
+        localStorage.setItem('listaHabil', opcaoHabilidades)
         // remove mensagem de que não há nada selecionado
         habilidadesP.innerHTML = ''
 
@@ -80,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // limpa lista para evitar repetição
         limpo = new Set(opcaoEstilos)
         opcaoEstilos = [...limpo]
+        localStorage.setItem('listaEstilo', opcaoEstilos)
         // remove mensagem de que não há nada selecionado
         estilosP.innerHTML = ''
 
@@ -98,15 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
         atualizaSubmit()
     })
 
-
-    // carrega dados para página seguinte
-    enviar = document.querySelector('.botao-on')
-    enviar.addEventListener('click', function() {
-        localStorage.setItem('fotoPerfil', fotoPerfil.scroll.toString())
-        localStorage.setItem('listaHabil', opcaoHabilidades)
-        localStorage.setItem('listaEstilo', opcaoEstilos)
-        localStorage.setItem('detalhesMusico', detalhesMusico)
+    // grava detalhes do músico
+    detalhesMusico.addEventListener('input', function() {
+        localStorage.setItem('detalhesMusico', detalhesMusico.value)
+        atualizaSubmit()
     })
-
 
 })

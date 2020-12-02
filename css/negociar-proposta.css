@@ -27,7 +27,7 @@ header {
     flex-direction: row;
     align-items: center;
     height: 5rem;
-    background-color: #0E516E;
+    background-color: #314A6B;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ h1 {
     align-self: center;
     color: white;
     font-size: 1.7rem;
-    width: calc(100% - 5rem);
+    width: calc(100% - 7rem);
 }
 
 main {
@@ -59,17 +59,13 @@ form {
 /* configurando inputs */
 input {
     border: none;
-    border-bottom: .1rem solid gray;
+    border-bottom: .1rem solid #515D6B;
     margin-top: .3rem;
 }
 
 input[type='number'] {
-    color: #068235;
+    color: #314a6b;
     font-weight: bolder;
-}
-
-input[type='text'] {
-    color: #8492A6;
 }
 
 /* margens e tamanhos do texto */
@@ -80,7 +76,7 @@ p, label {
 
 /* cor do valor antigo */
 p.valor-atual {
-    color: #B21B40;
+    color: #314a6b;
     font-weight: bold;
 }
 
@@ -98,18 +94,28 @@ p.valor-atual {
     margin-top: 2rem;
 }
 
-.botao {
+.botao-on {
     align-self: center;
     padding: .7rem 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
+    background-color: #314a6b;
     border-radius: .7rem;
 }
 
-.enviar {
-    background-color: #068235;
+.botao-off {
+    align-self: center;
+    padding: .7rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #515d6b;
+    border-radius: .7rem;
 }
 
 .cancelar {
-    background-color: #B21B40;
+    align-self: center;
+    padding: .6rem 1rem;
+    font-size: 1.1rem;
+    border-radius: .7rem;
+    border: .2rem solid #314A6B;
 }

@@ -6,10 +6,11 @@
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/novo-anuncio.css">
         <title>Novo anúncio</title>
+        <script src="../js/novo-anuncio.js"></script>
     </head>
     <body>
         <header>
-            <a class="voltar" href="#">
+            <a class="voltar" href="./meu-perfil.html">
                 <img src="../img/back.png" alt="voltar">
             </a>
             <h1>Novo anúncio</h1>
@@ -28,13 +29,13 @@
                 </select>
 
                 <h2>Disponibilidade</h2>
-                <input class="texto dia" placeholder="Dia(s)" type="number" value="">
-                <input class="texto horaInicio" placeholder="Horário de início" type="number" value="">
-                <input class="texto horaFinal" placeholder="Horário de término" type="number" value="">
-                <input class="texto valor" placeholder="Valor por hora (R$)" type="number" value="">
+                <input class="texto dia" placeholder="Data" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" value="">
+                <input class="texto horaInicio" placeholder="Horário de início" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time" value="">
+                <input class="texto horaFinal" placeholder="Horário de término" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time" value="">              
+                <input class="texto valor" placeholder="Valor (R$)" type="number" value="">
             </form>
 
-            <a class="botao" href="#">Criar anúncio</a>
+            <a class="botao botao-off">Criar anúncio</a>
         </main>
     </body>
 </html>
