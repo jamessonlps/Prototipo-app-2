@@ -54,7 +54,7 @@ header h1{
   .month {
   padding: 50px 1px 70px 1px;
   width: 100%;
-  background: #1abc9c;
+  background: #b5ceee;
   text-align: center;
   }
   
@@ -117,7 +117,7 @@ header h1{
   /* Highlight the "current" day */
   .days li .active {
   padding: 5px;
-  background: #1abc9c;
+  background: #b5ceee;
   color: white !important
   }
   
@@ -149,6 +149,7 @@ header h1{
     border: 0.1rem solid black;
     border-radius: 0.5rem;
     cursor: pointer;
+    background-color: #b5ceee;
   }
   
   form label{

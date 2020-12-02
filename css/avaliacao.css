@@ -15,6 +15,7 @@ header{
     padding: 0.3rem;
     border: 0.11rem solid black;
     border-radius: 0.5rem;
+    background-color: #b5ceee;
 
 }
 
@@ -69,6 +70,7 @@ button{
     padding: 3rem;
     border: 0.1rem solid black;
     position:relative;
+    background-color: #b5ceee;
   }
   
   @keyframes modal2{
@@ -92,6 +94,8 @@ button{
   justify-content: center;
   align-items: center;
   }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #6ba3eb;
 }
