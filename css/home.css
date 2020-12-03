@@ -35,7 +35,7 @@ main {
 /* Ajustos do Carrossel */
 .carrossel{
     height: 100%;
-    width: 100%;
+    width: 20%;
     background-color:#6ba3eb;
     overflow: hidden;
     position: relative;
@@ -65,7 +65,7 @@ main {
     background-repeat: no-repeat;
 }
 .carrossel #imgban2 {
-    background-image: url(../img/vocalista.jpg);
+    background-image: url(../img/vocalista_copia.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
