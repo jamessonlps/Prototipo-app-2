@@ -1,105 +1,79 @@
-html{
-    height: 100%;
+html {
+    font-size: 16px;
     width: 100%;
+    height: 100%;
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
-    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #314a6b;
 }
 
-#container{
+a {
+    display: block;
+    padding: 0rem .6rem;
+    text-decoration: none;
+}
+
+img {
+    width: 2.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 5rem;
+    background-color: #0E516E;
+    text-align: center;
+}
+
+h1 {
+    align-self: center;
+    color: white;
+    font-size: 1.7rem;
+    width: calc(100% - 7rem);
+}
+
+main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 1rem;
 }
 
-header{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
-    width: 100%;
-    padding: .5rem;
+h2 {
+    font-weight: bold;
 }
 
-#Capa{
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    bottom: 15vh;
-    width: 100vw;
-}
-
-#BackButton{
-    position: fixed;
-    top: 0.5rem;
-    left: 1rem;
-    width: 2rem;
-    height: 2rem;
-}
-
-#Perfil{
-    position: fixed;
-    top: 15%;
-    left: 1%;
-    margin: 0rem;
-}
-
-#Perfil img{
-    width: 8rem;
-    height: 7rem;
-    border: 0.3rem solid black;
-    border-radius: 15rem;
-}
-
-#Perfil div{
+/* div com foto, nome e cidade */
+.foto-perfil-container {
+    margin-top: 1.5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
-    border: 0.3rem solid black;
-    font-size: 0.6rem;
-    padding: auto;
-    background-color:  #b5ceee;
+    align-self: center;
 }
 
-.button{
-    position: fixed;
-    top: 25%;
-    left: 70%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background-color:  #b5ceee;
-    border: 0.1rem solid black;
-    padding: 0.3rem;
+/* alinha os parágrafos em coluna */
+.pseudo-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+    flex-grow: 1;
 }
 
-div{
-    font: black;
-    border: 0.1rem solid black;
-    margin: .1rem;
-    padding: .5rem;
-
+.nome, .endereco, .telefone {
+    padding: .3rem 0;
+    font-weight: bold;
 }
 
-#feed{
-    position: relative;
-    top: 17vh;
-    width: 90%;
-    background-color: #6ba3eb;
+/* foto do perfil */
+.foto {
+    width: 9rem;
+    border-radius: 50%;
 }
 
 /* seções com as tags de habilidade e estilo */
@@ -108,20 +82,60 @@ div{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 0 1.5rem 0;
-    background-color: #b5ceee;
 }
 
 /* tags de habilidades e estilos */
 .tag {
     margin: .3rem;
     padding: .2rem .7rem;
-    border: 0.1rem solid black;
+    background-color: #B1BEF7;
     border-radius: .3rem;
 }
 
+/* texto do parágrafo da descrição */
+.p-texto {
+    color: #8492A6;
+    font-family: 'Roboto Slab', serif;
+}
+
+.p-texto-dep {
+    color: black;
+    padding: .3rem 0;
+    font-family: 'Roboto Slab', serif;
+}
 
 /* margens gerais */
-.descricao, .fotos, .videos, .depoimentos {
+.descricao, .fotos, .videos, .anuncios {
     margin: 1.5rem 0 0 0;
-    background-color: #b5ceee;
+}
+
+/* botao para os dois casos */
+.botao {
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    padding: .6rem 1rem;
+    border-radius: .3rem;
+    background-color: #0E516E;
+    text-align: center;
+    max-width: 6rem;
+}
+
+.botao:active {
+    background-color: #B1BEF7;
+}
+
+.galeriaFoto {
+    width: 10rem;
+}
+
+.botao-container {
+    align-self: center;
+}
+
+.deps {
+    margin: .3rem 0;
+    padding: .6rem;
+    background-color: #b1bef793;
+    border-radius: .5rem;
 }
